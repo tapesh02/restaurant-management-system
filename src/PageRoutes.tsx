@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 import Dashboard from './components/pages/dashboard/Dashboard';
 import Inventory from './components/pages/inventory/Inventory';
 import Others from './components/pages/others/Others';
@@ -9,7 +9,6 @@ import Revenue from './components/pages/revenue/Revenue';
 
 const PageRoutes = () => {
   return (
-    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/teams" element={<Teams />} />
@@ -19,7 +18,6 @@ const PageRoutes = () => {
         <Route path="/others" element={<Others />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
-    </BrowserRouter>
   );
 };
 
