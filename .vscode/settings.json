@@ -324,7 +324,7 @@
   /**
    * Prettier - Use single quotes instead of double quotes.
    */
-  "prettier.singleQuote": true,
+  "prettier.singleQuote": false,
   /**
    * Prettier - Specify the number of spaces per indentation-level.
    */
