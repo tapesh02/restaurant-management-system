@@ -1,0 +1,87 @@
+$font: clamp(1em, 1.2em, 1.5em);
+
+.navbar-wrapper {
+  flex-grow: 1;
+  box-sizing: border-box;
+  .navbar-toolbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      margin-top: 0.6em;
+      width: 10rem;
+      object-fit: cover;
+      margin-right: auto;
+    }
+  }
+
+  .search-input-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #b1b1b13a;
+    padding-left: 0.1em;
+    border-radius: 3px;
+
+    .search-input {
+      width: 80%;
+      height: 3em;
+      margin-left: 0.5em;
+      padding-bottom: 0.5em;
+
+      .search-input-content {
+        font-size: $font;
+        color: #ffffff;
+        & fieldset {
+          border: unset;
+          outline: unset;
+        }
+      }
+    }
+  }
+}
+
+.drawer-wrapper {
+  .drawer-logo-wrapper {
+    width: 100%;
+    height: 4.8em;
+    background-color: #1976d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .drawer-logo {
+      width: 10rem;
+      object-fit: cover;
+    }
+  }
+
+  .menu-list-wrapper {
+    width: 100%;
+
+    .menu-list {
+      display: flex;
+      align-items: center;
+      gap: 0.7em;
+      cursor: pointer;
+      padding: 0.9em;
+
+      span {
+        margin-top: 0.2em;
+      }
+      &:hover {
+        transition: 2ms;
+        background-color: #e7f2fd;
+      }
+    }
+  }
+}
+
+// MU styles
+.MuiDrawer-paper {
+  width: 20em;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
