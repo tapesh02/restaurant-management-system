@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   FormControl,
   AppBar,
@@ -24,7 +25,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const menuList = [
     { id: 1, menuitem: 'Dashboard', icon: <MdOutlineDashboard size={20} /> },
-    { id: 2, menuitem: 'Team', icon: <MdGroups size={20} /> },
+    { id: 2, menuitem: 'Teams', icon: <MdGroups size={20} /> },
     {
       id: 3,
       menuitem: 'Reservations',
@@ -44,15 +45,19 @@ const Navbar = () => {
     setOpen(!open);
   };
 
+
+
   const RenderDrawer = () =>
-    menuList.map((menu) => (
+    menuList.map((menu) => {
+      const toPath = menu.menuitem.toLowerCase() === "dashboard" ? "/" : `/${menu.menuitem.toLowerCase()}`
+      return(
       <div className="menu-list-wrapper" key={menu.id} role="presentation">
-        <li className="menu-list" onClick={handleMenu}>
+        <NavLink to={toPath}  className="menu-list" onClick={handleMenu} >
           <span>{menu.icon}</span>
           {menu.menuitem}
-        </li>
+        </NavLink>
       </div>
-    ));
+    )});
 
   return (
     <Box className="navbar-wrapper">

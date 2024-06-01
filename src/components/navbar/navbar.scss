@@ -67,6 +67,8 @@ $font: clamp(1em, 1.2em, 1.5em);
       gap: 0.7em;
       cursor: pointer;
       padding: 0.9em;
+      text-decoration: none;
+      color: inherit;
 
       span {
         margin-top: 0.2em;
@@ -75,6 +77,10 @@ $font: clamp(1em, 1.2em, 1.5em);
         transition: 2ms;
         background-color: #e7f2fd;
       }
+    }
+    & .active {
+      background-color: #5782ad;
+      color: #ffffff;
     }
   }
 }
