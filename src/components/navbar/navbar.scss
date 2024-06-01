@@ -78,9 +78,8 @@ $font: clamp(1em, 1.2em, 1.5em);
         background-color: #e7f2fd;
       }
     }
-
-    .active-menu-list {
-      background-color: #27394e;
+    & .active {
+      background-color: #5782ad;
       color: #ffffff;
     }
   }

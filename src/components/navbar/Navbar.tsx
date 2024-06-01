@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   FormControl,
   AppBar,
@@ -8,10 +8,10 @@ import {
   IconButton,
   OutlinedInput,
   Drawer,
-} from "@mui/material";
-import { IoIosMenu } from "react-icons/io";
-import { CiSearch } from "react-icons/ci";
-import logo from "../../assets/logo.png";
+} from '@mui/material';
+import { IoIosMenu } from 'react-icons/io';
+import { CiSearch } from 'react-icons/ci';
+import logo from '../../assets/logo.png';
 import {
   MdOutlineDashboard,
   MdOutlineSettings,
@@ -19,53 +19,45 @@ import {
   MdOutlineLocalLibrary,
   MdOutlineFormatLineSpacing,
   MdOutlineInventory,
-} from "react-icons/md";
+} from 'react-icons/md';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const menuList = [
-    { id: 1, menuitem: "Dashboard", icon: <MdOutlineDashboard size={20} /> },
-    { id: 2, menuitem: "Teams", icon: <MdGroups size={20} /> },
+    { id: 1, menuitem: 'Dashboard', icon: <MdOutlineDashboard size={20} /> },
+    { id: 2, menuitem: 'Teams', icon: <MdGroups size={20} /> },
     {
       id: 3,
-      menuitem: "Reservations",
+      menuitem: 'Reservations',
       icon: <MdOutlineLocalLibrary size={20} />,
     },
     {
       id: 4,
-      menuitem: "Revenue",
+      menuitem: 'Revenue',
       icon: <MdOutlineFormatLineSpacing size={20} />,
     },
-    { id: 5, menuitem: "Inventory", icon: <MdOutlineInventory size={20} /> },
-    { id: 6, menuitem: "Others", icon: <IoIosMenu size={20} /> },
-    { id: 7, menuitem: "Settings", icon: <MdOutlineSettings size={20} /> },
+    { id: 5, menuitem: 'Inventory', icon: <MdOutlineInventory size={20} /> },
+    { id: 6, menuitem: 'Others', icon: <IoIosMenu size={20} /> },
+    { id: 7, menuitem: 'Settings', icon: <MdOutlineSettings size={20} /> },
   ];
 
   const handleMenu = () => {
     setOpen(!open);
   };
 
+
+
   const RenderDrawer = () =>
     menuList.map((menu) => {
-      const toPath =
-        menu.menuitem.toLowerCase() === "dashboard"
-          ? "/"
-          : `/${menu.menuitem.toLowerCase()}`;
-      return (
-        <div className="menu-list-wrapper" key={menu.id} role="presentation">
-          <NavLink
-            to={toPath}
-            className={({ isActive }) =>
-              isActive ? "active-menu-list menu-list" : "menu-list"
-            }
-            onClick={handleMenu}
-          >
-            <span>{menu.icon}</span>
-            {menu.menuitem}
-          </NavLink>
-        </div>
-      );
-    });
+      const toPath = menu.menuitem.toLowerCase() === "dashboard" ? "/" : `/${menu.menuitem.toLowerCase()}`
+      return(
+      <div className="menu-list-wrapper" key={menu.id} role="presentation">
+        <NavLink to={toPath}  className="menu-list" onClick={handleMenu} >
+          <span>{menu.icon}</span>
+          {menu.menuitem}
+        </NavLink>
+      </div>
+    )});
 
   return (
     <Box className="navbar-wrapper">
