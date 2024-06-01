@@ -1,11 +1,15 @@
-import PageRoutes from './PageRoutes';
-import NavBar from './components/navbar/Navbar';
+import PageRoutes from "./PageRoutes";
+import Appbar from "./components/navbar/Appbar";
+import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
   return (
     <>
-      <NavBar />
-      <PageRoutes />
+      <Appbar />
+      <div className="main-app">
+        <Navbar />
+        <PageRoutes />
+      </div>
     </>
   );
 };

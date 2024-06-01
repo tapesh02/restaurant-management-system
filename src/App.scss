@@ -1,7 +1,16 @@
-:root {
-  font-family: 'Montserrat', sans-serif;
+*{
+  font-family: 'Montserrat', sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
 }
+body{
+  background-color: #f6fafd;
+}
+.main-app{
+  display:flex;
+  gap: 1rem
+}
+
 
 @import './components/navbar/navbar.scss';
+@import './components/pages/dashboard/dashboard.scss';
