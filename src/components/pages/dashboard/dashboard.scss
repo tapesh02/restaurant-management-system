@@ -9,8 +9,7 @@
   }
 
   .dash-cards-wrapper {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
     box-sizing: border-box;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 1px #fdf7f7;
@@ -28,43 +27,59 @@
     }
   }
 
-  .line-chart-wrapper {
-    border: 1px solid #e0e0e0;
-    margin: 1em 0;
-    box-sizing: border-box;
-    margin-right: 1em;
-    width: 65%;
-    border-radius: 5px;
-    position: relative;
+  .charts-wrapper {
+    .line-chart-wrapper {
+      border: 1px solid #e0e0e0;
+      margin: 1em 0;
+      box-sizing: border-box;
+      margin-right: 1em;
+      width: 65%;
+      border-radius: 5px;
+      position: relative;
 
-    .chart-header {
-      position: absolute;
-      left: 2%;
-      top: 2%;
+      .chart-header {
+        position: absolute;
+        left: 2%;
+        top: 2%;
+      }
+
+      & .MuiAreaElement-root {
+        fill: #e3f5fd;
+      }
+
+      & .MuiChartsAxis-directionY {
+        display: none;
+      }
     }
 
-    & .MuiAreaElement-root {
-      fill: #e3f5fd;
-    }
+    .gauge-chart-wrapper {
+      border: 1px solid #e0e0e0;
+      width: 35%;
+      margin: 1em 0;
+      padding: 1.5em;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      position: relative;
 
-    & .MuiChartsAxis-directionY {
-      display: none;
-    }
-  }
-
-  .gauge-chart-wrapper {
-    border: 1px solid #e0e0e0;
-    width: 33%;
-    margin: 1em 0;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1em;
-    box-sizing: border-box;
-
-    & .MuiGauge-valueText{
+      .chart-header{
+        position: absolute;
+        top: 0%;
+        left: 3%;
+      }
+      & .MuiGauge-valueText {
         font-size: 4em;
+      }
+
+      & .MuiGauge-referenceArc{
+        fill: #f0efef;
+      }
+
+      & .MuiGauge-valueArc{
+        fill: #02B2AF;
+      }
     }
   }
 }

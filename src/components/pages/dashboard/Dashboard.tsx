@@ -3,9 +3,9 @@ import { LineChart, Gauge } from "@mui/x-charts";
 
 const Dashboard = () => {
   const RenderCards = () => {
-    return Array.from({ length: 5 }, (_, index) => (
+    return ["Total Orders", "Total Sales", "Cash Orders", "Online Orders", "Monthly Average"].map((cardTitle, index) => (
       <Card className="dash-cards" key={index}>
-        <Typography variant="subtitle1">Total Orders</Typography>
+        <Typography variant="subtitle2">{cardTitle}</Typography>
         <Typography variant="h4">
           $ {Math.floor(Math.random() * 1000)}k
         </Typography>
@@ -23,6 +23,7 @@ const Dashboard = () => {
             area: true,
           },
         ]}
+        height={350}
       />
     );
   };
@@ -30,18 +31,21 @@ const Dashboard = () => {
   return (
     <div className="dashboard-wrapper">
       <Typography variant="h6">Hi! Tapesh</Typography>
-      <Stack direction="column" className="dash-cards-wrapper">
+      <Stack direction="row" className="dash-cards-wrapper">
         <RenderCards />
       </Stack>
       <Stack direction="row" className="charts-wrapper">
         <div className="line-chart-wrapper">
           <div className="chart-header">
-            <Typography variant="subtitle1">January sales</Typography>
+            <Typography variant="subtitle2">January sales</Typography>
           </div>
           <RenderLineChart />
         </div>
         <div className="gauge-chart-wrapper">
-          <Gauge value={50} valueMin={10} valueMax={60}   innerRadius="75%"/>
+        <div className="chart-header">
+            <Typography variant="subtitle2">January Orders</Typography>
+          </div>
+          <Gauge value={50} valueMin={10} valueMax={60} innerRadius="75%" />
         </div>
       </Stack>
     </div>

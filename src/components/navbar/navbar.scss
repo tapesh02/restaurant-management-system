@@ -4,6 +4,11 @@ $font: clamp(1em, 1.2em, 1.5em);
 .appbar-wrapper {
   flex-grow: 1;
   box-sizing: border-box;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0%;
+  z-index: 1;
+
   .navbar-toolbar-wrapper {
     display: flex;
     align-items: center;
@@ -88,17 +93,18 @@ $font: clamp(1em, 1.2em, 1.5em);
 
 // navbar desktop
 .navbar-wrapper {
-  width: 12em;
+  width: 180px;
   margin-top: 0.2em;
   height: calc(100vh - 5.31rem);
   background-color: #f6fafd71;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 1px 2px 5px 2px #dcdcdc;
   position: sticky;
+  position: -webkit-sticky;
+  top: 12%;
+  z-index: 1;
 
   .desktop-menu-list-wrapper {
     display: flex;
+    width: 180px;
     flex-direction: column;
     gap: 1em;
     margin: 0.2em 0;
@@ -111,8 +117,6 @@ $font: clamp(1em, 1.2em, 1.5em);
       text-decoration: none;
       gap: 0.5em;
       align-items: center;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
 
       &:hover {
         transition: 2ms;
@@ -122,8 +126,8 @@ $font: clamp(1em, 1.2em, 1.5em);
     }
 
     & .active {
-      background-color: #5782ad;
-      color: #ffffff;
+      background-color:  #f0efef;
+      color: #1976d2;
     }
   }
 }
