@@ -43,7 +43,7 @@ const Dashboard = () => {
         </div>
         <div className="gauge-chart-wrapper">
         <div className="chart-header">
-            <Typography variant="subtitle2">January Orders</Typography>
+            <Typography variant="subtitle2">Monthly Average</Typography>
           </div>
           <Gauge value={50} valueMin={10} valueMax={60} innerRadius="75%" />
         </div>
