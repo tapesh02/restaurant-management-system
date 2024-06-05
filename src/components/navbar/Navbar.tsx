@@ -15,7 +15,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const menuList = [
     { id: 1, menuitem: "Dashboard", icon: <MdOutlineDashboard size={20} /> },
-    { id: 2, menuitem: "Teams", icon: <MdGroups size={20} /> },
+    { id: 2, menuitem: "Tables", icon: <MdGroups size={20} /> },
     {
       id: 3,
       menuitem: "Reservations",

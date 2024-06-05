@@ -3,14 +3,16 @@ import { LineChart, Gauge } from "@mui/x-charts";
 
 const Dashboard = () => {
   const RenderCards = () => {
-    return ["Total Orders", "Total Sales", "Cash Orders", "Online Orders", "Monthly Average"].map((cardTitle, index) => (
-      <Card className="dash-cards" key={index}>
-        <Typography variant="subtitle2">{cardTitle}</Typography>
-        <Typography variant="h4">
-          $ {Math.floor(Math.random() * 1000)}k
-        </Typography>
-      </Card>
-    ));
+    return ["Total Orders", "Total Sales", "Cash Orders", "Online Orders"].map(
+      (cardTitle, index) => (
+        <Card className="dash-cards" key={index}>
+          <Typography variant="h6">{cardTitle}</Typography>
+          <Typography variant="h4">
+            $ {Math.floor(Math.random() * 1000)}k
+          </Typography>
+        </Card>
+      )
+    );
   };
 
   const RenderLineChart = () => {
@@ -42,7 +44,7 @@ const Dashboard = () => {
           <RenderLineChart />
         </div>
         <div className="gauge-chart-wrapper">
-        <div className="chart-header">
+          <div className="chart-header">
             <Typography variant="subtitle2">Monthly Average</Typography>
           </div>
           <Gauge value={50} valueMin={10} valueMax={60} innerRadius="75%" />
