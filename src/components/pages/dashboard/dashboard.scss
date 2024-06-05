@@ -44,12 +44,21 @@
       }
 
       & .MuiAreaElement-root {
-        fill: #e3f5fd;
+        fill: #d4f2ff;
       }
 
       & .MuiChartsAxis-directionY {
         display: none;
       }
+      //for dots
+      & .MuiMarkElement-root{
+        stroke: #e3f5fd;
+      }
+      //for curve line
+      & .MuiLineElement-series-auto-generated-id-0{
+        stroke: #e3f5fd;
+      }
+ 
     }
 
     .gauge-chart-wrapper {
@@ -78,7 +87,7 @@
       }
 
       & .MuiGauge-valueArc{
-        fill: #02B2AF;
+        fill: #1976d2;
       }
     }
   }

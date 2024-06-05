@@ -23,6 +23,7 @@ const Dashboard = () => {
           {
             data: [2, 5.5, 2, 8.5, 1.5, 5],
             area: true,
+            color: "#1976d2",
           },
         ]}
         height={350}
