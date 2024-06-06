@@ -1,26 +1,94 @@
 .tables-wrapper {
-  padding: 1em;
-  display: flex;
-  gap: 1em;
-  justify-content: space-between;
-  align-items: center;
-  height: 7em;
   width: 100%;
+  box-sizing: border-box;
 
-  .tables-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 17em;
-    height: 100%;
+  .tables-card-wrapper {
     box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    height: 10em;
+    width: 100%;
 
-    .tables-card-header{
+    .tables-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 17em;
+      height: 100%;
+      box-sizing: border-box;
+
+      .tables-card-header {
         background-color: #1976d2;
         color: #ffffff;
         width: 100%;
         text-align: center;
         padding: 0.3em;
+      }
+    }
+  }
+
+  table {
+    width: 98%;
+    margin: auto;
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #e9e9e9;
+
+    thead {
+      width: 100%;
+
+      tr {
+        text-align: left;
+        th {
+          padding: 1em;
+
+          &:first-child {
+            border-top-left-radius: 5px;
+          }
+
+          &:last-child {
+            border-top-right-radius: 5px;
+          }
+        }
+      }
+      .active-table-row {
+        background-color: #cecece;
+        text-align: left;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 1em;
+
+          p{
+            margin: 0;
+            padding: 0.4em;
+            padding-left: 1.5em;
+            margin-left: -1.6em;
+            border-radius: 30px;
+           
+          }
+          & [data-status="served"] {
+            background-color: #d8eafc;
+            color: #1976d2;
+          }
+          & [data-status="preparing"] {
+            background-color: #c8f7de;
+            color: #325900;
+          }
+          & [data-status="waiting"] {
+            background-color: #ffe9ca;
+            color: #f1910c;
+          }
+        }
+       
+
+      }
     }
   }
 }

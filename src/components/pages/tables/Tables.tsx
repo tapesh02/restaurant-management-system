@@ -7,6 +7,27 @@ const Tables = () => {
     { header: "Team Members", totalNumber: 25 },
   ];
 
+  const tableData = [
+    {
+      tableNumber: 1,
+      serverName: "Kunal Kamra",
+      orderStatus: "served",
+      customerName: "Jane Smith",
+    },
+    {
+      tableNumber: 2,
+      serverName: "Think Tank",
+      orderStatus: "preparing",
+      customerName: "John Smith",
+    },
+    {
+      tableNumber: 3,
+      serverName: "Cool Dude",
+      orderStatus: "waiting",
+      customerName: "Joe Smith",
+    },
+  ];
+
   const RenderTablesCard = () => {
     return tableCards?.map(({ header, totalNumber }, index) => (
       <Card className="tables-card" key={index}>
@@ -20,9 +41,42 @@ const Tables = () => {
     ));
   };
 
+  const RenderTableStatus = () => {
+    return tableData.map(
+      ({ tableNumber, serverName, orderStatus, customerName }) => (
+        <tbody key={tableNumber}>
+          <tr>
+            <td>{tableNumber}</td>
+            <td>{serverName}</td>
+            <td>
+              <p data-status={orderStatus}>{orderStatus}</p>
+            </td>
+            <td>{customerName} </td>
+          </tr>
+        </tbody>
+      )
+    );
+  };
+
   return (
     <div className="tables-wrapper">
-      <RenderTablesCard />
+      <div className="tables-card-wrapper">
+        <RenderTablesCard />
+      </div>
+      <table>
+        <thead>
+          <tr className="active-table-row">
+            <th colSpan={4}>Active Table</th>
+          </tr>
+          <tr>
+            <th>Table</th>
+            <th>Server</th>
+            <th>Order Status</th>
+            <th>Customer</th>
+          </tr>
+        </thead>
+        <RenderTableStatus />
+      </table>
     </div>
   );
 };
