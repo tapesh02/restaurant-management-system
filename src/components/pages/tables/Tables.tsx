@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography } from "@mui/material";
+import { Avatar, Card, CardContent, Typography } from "@mui/material";
 
 const Tables = () => {
   const tableCards = [
@@ -47,7 +47,16 @@ const Tables = () => {
         <tbody key={tableNumber}>
           <tr>
             <td>{tableNumber}</td>
-            <td>{serverName}</td>
+            <td>
+              <span>
+                <Avatar
+                  alt={serverName}
+                  src="https://avatar.iran.liara.run/public"
+                  sx={{ width: 35, height: 35 }}
+                />
+              </span>
+              {serverName}
+            </td>
             <td>
               <p data-status={orderStatus}>{orderStatus}</p>
             </td>

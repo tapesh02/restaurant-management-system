@@ -27,6 +27,14 @@
         text-align: center;
         padding: 0.3em;
       }
+
+      .tables-card-content{
+        h4{
+          font-weight: 900;
+          font-size: 4.5ch;
+          font-variant-numeric: tabular-nums;
+        }
+      }
     }
   }
 
@@ -65,11 +73,17 @@
         td {
           padding: 1em;
 
+          &:nth-child(2){
+            display: flex;
+            gap: 0.7em;
+            align-items: center;
+          }
+
           p{
             margin: 0;
             padding: 0.4em;
             padding-left: 1.5em;
-            margin-left: -1.6em;
+            margin-left: -1.3em;
             border-radius: 30px;
            
           }
