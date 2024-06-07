@@ -51,7 +51,7 @@ const Tables = () => {
               <span>
                 <Avatar
                   alt={serverName}
-                  src="https://avatar.iran.liara.run/public"
+                  src="https://i.pravatar.cc/300"
                   sx={{ width: 35, height: 35 }}
                 />
               </span>
