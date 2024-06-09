@@ -2,12 +2,8 @@
 import { Card, Typography, Stack, Divider } from "@mui/material";
 import { LineChart, Gauge } from "@mui/x-charts";
 import { IoIosStar } from "react-icons/io";
-import { IconType } from "react-icons";
+import IconComponent from "../../iconComponent/IconComponent";
 import { FiActivity } from "react-icons/fi";
-
-interface IconStar {
-  icon: IconType;
-}
 
 const Dashboard = () => {
   const favFoods = [
@@ -48,9 +44,6 @@ const Dashboard = () => {
     },
   ];
 
-  const IconComponent: React.FC<IconStar> = ({ icon: Icon }) => {
-    return <Icon />;
-  };
 
   const RenderCards = () => {
     return ["Total Orders", "Total Sales", "Cash Orders", "Online Orders"].map(
@@ -85,7 +78,7 @@ const Dashboard = () => {
     );
   };
 
-  const RenderFavFoodCards = () => {
+  const RenderFavFoodTable = () => {
     return favFoods?.map(({ id, dishName, timesOrdered, image }, index) => (
       <tbody key={id}>
         <tr>
@@ -177,7 +170,7 @@ const Dashboard = () => {
                 <th>Average</th>
               </tr>
             </thead>
-            <RenderFavFoodCards />
+            <RenderFavFoodTable />
           </table>
         </div>
       </Stack>

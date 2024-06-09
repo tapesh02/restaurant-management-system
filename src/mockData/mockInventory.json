@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "itemName": "Chicken",
+        "quantity": 83,
+        "price": 653.56,
+        "category": "Meat"
+    },
+    {
+        "id": 2,
+        "itemName": "Cucumber",
+        "quantity": 83,
+        "price": 653.56,
+        "category": "Vegetables"
+    },
+    {
+        "id": 3,
+        "itemName": "Basmati Rice",
+        "quantity": 200,
+        "price": 1200.00,
+        "category": "Grains"
+    },
+    {
+        "id": 4,
+        "itemName": "Paneer",
+        "quantity": 50,
+        "price": 450.00,
+        "category": "Dairy"
+    },
+    {
+        "id": 5,
+        "itemName": "Tomatoes",
+        "quantity": 150,
+        "price": 300.00,
+        "category": "Vegetables"
+    },
+    {
+        "id": 6,
+        "itemName": "Garam Masala",
+        "quantity": 40,
+        "price": 800.00,
+        "category": "Spices"
+    },
+    {
+        "id": 7,
+        "itemName": "Lentils",
+        "quantity": 100,
+        "price": 400.00,
+        "category": "Grains"
+    },
+    {
+        "id": 8,
+        "itemName": "Yogurt",
+        "quantity": 60,
+        "price": 250.00,
+        "category": "Dairy"
+    },
+    {
+        "id": 9,
+        "itemName": "Green Peas",
+        "quantity": 120,
+        "price": 500.00,
+        "category": "Vegetables"
+    },
+    {
+        "id": 10,
+        "itemName": "Mutton",
+        "quantity": 30,
+        "price": 1200.00,
+        "category": "Meat"
+    },
+    {
+        "id": 11,
+        "itemName": "Mustard Seeds",
+        "quantity": 45,
+        "price": 150.00,
+        "category": "Spices"
+    },
+    {
+        "id": 12,
+        "itemName": "Cauliflower",
+        "quantity": 90,
+        "price": 320.00,
+        "category": "Vegetables"
+    },
+    {
+        "id": 13,
+        "itemName": "Butter",
+        "quantity": 75,
+        "price": 600.00,
+        "category": "Dairy"
+    },
+    {
+        "id": 14,
+        "itemName": "Onions",
+        "quantity": 180,
+        "price": 400.00,
+        "category": "Vegetables"
+    },
+    {
+        "id": 15,
+        "itemName": "Garlic",
+        "quantity": 70,
+        "price": 250.00,
+        "category": "Vegetables"
+    },
+    {
+        "id": 16,
+        "itemName": "Cumin Seeds",
+        "quantity": 35,
+        "price": 220.00,
+        "category": "Spices"
+    },
+    {
+        "id": 17,
+        "itemName": "Turmeric Powder",
+        "quantity": 50,
+        "price": 300.00,
+        "category": "Spices"
+    },
+    {
+        "id": 18,
+        "itemName": "Coconut Milk",
+        "quantity": 40,
+        "price": 700.00,
+        "category": "Canned Goods"
+    },
+    {
+        "id": 19,
+        "itemName": "Chickpeas",
+        "quantity": 110,
+        "price": 350.00,
+        "category": "Grains"
+    },
+    {
+        "id": 20,
+        "itemName": "Coriander Leaves",
+        "quantity": 80,
+        "price": 100.00,
+        "category": "Herbs"
+    }
+]
