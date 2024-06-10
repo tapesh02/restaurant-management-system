@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Box } from "@mui/material";
-import { IoIosMenu } from "react-icons/io";
 import {
   MdOutlineDashboard,
   MdOutlineSettings,
@@ -27,8 +26,7 @@ const Navbar = () => {
       icon: <MdOutlineFormatLineSpacing size={20} />,
     },
     { id: 5, menuitem: "Inventory", icon: <MdOutlineInventory size={20} /> },
-    { id: 6, menuitem: "Others", icon: <IoIosMenu size={20} /> },
-    { id: 7, menuitem: "Settings", icon: <MdOutlineSettings size={20} /> },
+    { id: 6, menuitem: "Settings", icon: <MdOutlineSettings size={20} /> },
   ];
 
   const handleMenu = () => {
