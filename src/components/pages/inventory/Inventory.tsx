@@ -25,7 +25,7 @@ const Inventory = () => {
 
   return (
     <div className="inventory-wrapper">
-      <Typography variant="h5">Inventory</Typography>
+      <Typography variant="h4">Inventory</Typography>
       <div className="inventory-buttons-wrapper">
         <Button variant="outlined">Add Item</Button>
         <Button variant="outlined">Export</Button>
