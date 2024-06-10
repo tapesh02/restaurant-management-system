@@ -95,11 +95,9 @@ $font: clamp(1em, 1.2em, 1.5em);
 .navbar-wrapper {
   width: 180px;
   margin-top: 0.2em;
-  height: calc(100vh - 5.31rem);
   background-color: #f6fafd71;
   position: sticky;
   position: -webkit-sticky;
-  top: 12%;
   z-index: 1;
 
   .desktop-menu-list-wrapper {
