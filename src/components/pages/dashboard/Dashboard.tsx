@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Card, Typography, Stack, Divider } from "@mui/material";
+import { Card, Typography, Stack } from "@mui/material";
 import { LineChart, Gauge } from "@mui/x-charts";
 import { IoIosStar } from "react-icons/io";
 import IconComponent from "../../iconComponent/IconComponent";
@@ -43,7 +43,6 @@ const Dashboard = () => {
         "https://images.unsplash.com/photo-1606471191009-63994c53433b?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
-
 
   const RenderCards = () => {
     return ["Total Orders", "Total Sales", "Cash Orders", "Online Orders"].map(
@@ -143,18 +142,20 @@ const Dashboard = () => {
           <div className="chart-header">
             <Typography variant="h6">Monthly Average</Typography>
           </div>
-          <Gauge value={50} valueMin={10} valueMax={60} innerRadius="75%"  cornerRadius="50%"/>
+          <Gauge
+            value={50}
+            valueMin={10}
+            valueMax={60}
+            innerRadius="75%"
+            cornerRadius="50%"
+          />
         </div>
       </Stack>
       <Stack direction="row" gap={3}>
         <Stack direction="column" className="feedback-wrapper-main">
-          <Typography variant="h6">Feedbacks(5)</Typography>
+          <Typography variant="h6">Feedbacks(3)</Typography>
           <RenderFeedbacks />
-          <Divider />
           <RenderFeedbacks />
-          <Divider />
-          <RenderFeedbacks />
-          <Divider />
           <RenderFeedbacks />
         </Stack>
 

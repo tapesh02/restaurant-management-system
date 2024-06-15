@@ -52,14 +52,25 @@ const Settings = () => {
               </Typography>
             </div>
             <div className="cards-content">
-              <Typography variant="body1">Open Time</Typography>
-              <Typography variant="body2">
-                Set the time your restaurant opens for the day.
-              </Typography>
-              <Typography variant="body1">Close Time</Typography>
-              <Typography variant="body2">
-                Set the time your restaurant closes for the day.
-              </Typography>
+              <div className="cards-content">
+                <div className="add-member-points">
+                  <ul>
+                    <li>
+                      <p>
+                        Easily set and update your restaurants operating hours.
+                      </p>
+                    </li>
+                    <li>
+                      <p>Customize hours for special events and holidays.</p>
+                    </li>
+                    <li>
+                      <p>
+                        Sync operating hours across all locations seamlessly.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <Button color="primary" variant="outlined">
                 Save
               </Button>
@@ -70,7 +81,9 @@ const Settings = () => {
             <div className="card-headers">
               <Typography variant="h5">Customer Engagement</Typography>
               <Typography variant="subtitle1">
-                Send email to notify customers.
+                Enhance customer engagement by keeping them informed with
+                personalized emails about special promotions, new menu items,
+                and upcoming events.
               </Typography>
             </div>
             <div className="cards-content">
@@ -88,10 +101,43 @@ const Settings = () => {
                 </Select>
               </FormControl>
               <Typography variant="body2">
-              Choose what type of notifications to send customers.
+                Choose what type of notifications to send customers.
               </Typography>
               <Button color="primary" variant="outlined">
                 Send Email
+              </Button>
+            </div>
+          </div>
+          {/* replace this with arrays */}
+          <div className="settings-cards">
+            <div className="card-headers">
+              <Typography variant="h5">Staff Members</Typography>
+              <Typography variant="subtitle1">
+                Manage your restaurants staff members, including their roles and
+                contact information.
+              </Typography>
+            </div>
+            <div className="cards-content">
+              <div className="add-member-points">
+                <ul>
+                  <li>
+                    <p>
+                      {" "}
+                      Quickly add new staff profiles with essential details.
+                    </p>
+                  </li>
+                  <li>
+                    <p>Assign roles and permissions effortlessly.</p>
+                  </li>
+                  <li>
+                    <p>
+                      Streamline onboarding with automated training modules.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <Button color="primary" variant="outlined">
+                Add member
               </Button>
             </div>
           </div>
