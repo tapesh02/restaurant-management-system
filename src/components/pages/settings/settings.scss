@@ -1,0 +1,50 @@
+.settings-headers {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  :first-child {
+    font-weight: 600;
+  }
+  :last-child {
+    color: grayscale($color: #747474);
+  }
+}
+
+.settings-cards-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2em;
+
+  .settings-cards {
+    width: 48%;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+
+    .card-headers {
+      :first-child {
+        font-weight: 600;
+      }
+
+      h6 {
+        color: #747474;
+      }
+    }
+    button {
+        margin-top: 1.5em;
+        float: right;
+    }
+  }
+}
