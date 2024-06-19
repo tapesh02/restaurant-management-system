@@ -1,48 +1,26 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Box } from "@mui/material";
-import {
-  MdOutlineDashboard,
-  MdOutlineSettings,
-  MdGroups,
-  MdOutlineLocalLibrary,
-  MdOutlineFormatLineSpacing,
-  MdOutlineInventory,
-} from "react-icons/md";
+import { menuList } from "../../helpers/dataHelpers"
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const menuList = [
-    { id: 1, menuitem: "Dashboard", icon: <MdOutlineDashboard size={20} /> },
-    { id: 2, menuitem: "Tables", icon: <MdGroups size={20} /> },
-    {
-      id: 3,
-      menuitem: "Reservations",
-      icon: <MdOutlineLocalLibrary size={20} />,
-    },
-    {
-      id: 4,
-      menuitem: "Revenue",
-      icon: <MdOutlineFormatLineSpacing size={20} />,
-    },
-    { id: 5, menuitem: "Inventory", icon: <MdOutlineInventory size={20} /> },
-    { id: 6, menuitem: "Settings", icon: <MdOutlineSettings size={20} /> },
-  ];
-
+  
   const handleMenu = () => {
     setOpen(!open);
   };
 
   const RenderDrawer = () =>
-    menuList.map((menu) => {
+    menuList.map(({ id, menuitem, icon }) => {
       const toPath =
-        menu.menuitem.toLowerCase() === "dashboard"
+        menuitem.toLowerCase() === "dashboard"
           ? "/"
-          : `/${menu.menuitem.toLowerCase()}`;
+          : `/${menuitem.toLowerCase()}`;
+      const Icon = icon;
       return (
         <div
           className="desktop-menu-list-wrapper"
-          key={menu.id}
+          key={id}
           role="presentation"
         >
           <NavLink
@@ -50,8 +28,8 @@ const Navbar = () => {
             className="desktop-menu-list"
             onClick={handleMenu}
           >
-            <span>{menu.icon}</span>
-            {menu.menuitem}
+            <span>{<Icon />}</span>
+            {menuitem}
           </NavLink>
         </div>
       );
