@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Button,
   FormControl,
@@ -7,8 +8,11 @@ import {
   Typography,
   MenuItem,
 } from "@mui/material";
+import MemeberForm from "./MemeberForm";
 
 const Settings = () => {
+ const [showForm, setShowForm] = useState(false);
+
   return (
     <>
       <Stack direction="column" width="100%">
@@ -136,12 +140,13 @@ const Settings = () => {
                   </li>
                 </ul>
               </div>
-              <Button color="primary" variant="outlined">
+              <Button color="primary" variant="outlined" onClick={()=>setShowForm(true)}>
                 Add member
               </Button>
             </div>
           </div>
         </div>
+        <MemeberForm showForm={showForm} setShowForm={setShowForm}/>
       </Stack>
     </>
   );
