@@ -31,3 +31,45 @@ export const menuList: MenuList[] = [
   { id: 6, menuitem: "Settings", icon: MdOutlineSettings },
 
 ];
+
+
+interface TableData {
+  tableNumber: number,
+  serverName: string,
+  orderStatus: string,
+  customerName: string,
+}
+
+export const tableData: TableData[] = [
+  {
+    tableNumber: 1,
+    serverName: "Kunal Kamra",
+    orderStatus: "served",
+    customerName: "Jane Smith",
+  },
+  {
+    tableNumber: 2,
+    serverName: "Think Tank",
+    orderStatus: "preparing",
+    customerName: "John Smith",
+  },
+  {
+    tableNumber: 3,
+    serverName: "Cool Dude",
+    orderStatus: "waiting",
+    customerName: "Joe Smith",
+  },
+];
+
+
+interface TableCards {
+  totalNumber: number,
+  header: string,
+}
+
+export const tableCards: TableCards[] = [
+  { header: "Total Tables", totalNumber: 20 },
+  { header: "Active Tables", totalNumber: 12 },
+  { header: "Team Members", totalNumber: 25 },
+];
+
