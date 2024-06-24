@@ -64,30 +64,31 @@ $font: clamp(1em, 1.2em, 1.5em);
     }
   }
 
-  .menu-list-wrapper {
-    width: 100%;
+}
 
-    .menu-list {
-      display: flex;
-      align-items: center;
-      gap: 0.7em;
-      cursor: pointer;
-      padding: 0.9em;
-      text-decoration: none;
-      color: inherit;
+.menu-list-wrapper {
+  width: 100%;
 
-      span {
-        margin-top: 0.2em;
-      }
-      &:hover {
-        transition: 2ms;
-        background-color: #e7f2fd;
-      }
+  .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    cursor: pointer;
+    padding: 0.9em;
+    text-decoration: none;
+    color: inherit;
+
+    span {
+      margin-top: 0.2em;
     }
-    & .active {
-      background-color: #5782ad;
-      color: #ffffff;
+    &:hover {
+      transition: 2ms;
+      background-color: #e7f2fd;
     }
+  }
+  & .active {
+    background-color: #5782ad;
+    color: #ffffff;
   }
 }
 

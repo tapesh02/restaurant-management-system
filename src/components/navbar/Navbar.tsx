@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import { Box } from "@mui/material";
-import { menuList } from "../../helpers/dataHelpers"
+import RenderDrawer from "./RenderDrawer";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -10,30 +9,6 @@ const Navbar = () => {
     setOpen(!open);
   };
 
-  const RenderDrawer = () =>
-    menuList.map(({ id, menuitem, icon }) => {
-      const toPath =
-        menuitem.toLowerCase() === "dashboard"
-          ? "/"
-          : `/${menuitem.toLowerCase()}`;
-      const Icon = icon;
-      return (
-        <div
-          className="desktop-menu-list-wrapper"
-          key={id}
-          role="presentation"
-        >
-          <NavLink
-            to={toPath}
-            className="desktop-menu-list"
-            onClick={handleMenu}
-          >
-            <span>{<Icon />}</span>
-            {menuitem}
-          </NavLink>
-        </div>
-      );
-    });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +29,7 @@ const Navbar = () => {
 
   return (
     <Box className="navbar-wrapper">
-      <RenderDrawer />
+      <RenderDrawer handleMenu={handleMenu}/>
     </Box>
   );
 };
