@@ -4,11 +4,10 @@ import RenderDrawer from "./RenderDrawer";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  
+
   const handleMenu = () => {
     setOpen(!open);
   };
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,9 +27,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <Box className="navbar-wrapper">
-      <RenderDrawer handleMenu={handleMenu}/>
-    </Box>
+    <>
+     <Box className="navbar-wrapper">
+          <RenderDrawer handleMenu={handleMenu} />
+        </Box> 
+    </>
   );
 };
 export default Navbar;

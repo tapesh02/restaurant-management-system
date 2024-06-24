@@ -1,17 +1,18 @@
 import {
-    FormControl,
-    AppBar,
-    Box,
-    Toolbar,
-    OutlinedInput,
-  } from "@mui/material";
-  import { CiSearch } from "react-icons/ci";
-  import logo from "../../assets/logo.png";
+  FormControl,
+  AppBar,
+  Box,
+  Toolbar,
+  OutlinedInput,
+} from "@mui/material";
+import { CiSearch } from "react-icons/ci";
+import logo from "../../assets/logo.png";
 
-const Appbar = () => { 
-    return (
-      <Box className="appbar-wrapper">
-        <AppBar position="static">
+const Appbar = () => {
+
+  return (
+    <Box className="appbar-wrapper">
+      <AppBar position="static">
         <Toolbar className="navbar-toolbar-wrapper">
           <img src={logo} alt="logo" className="logo" />
           <Box className="search-input-wrapper">
@@ -25,8 +26,9 @@ const Appbar = () => {
           </Box>
         </Toolbar>
       </AppBar>
-      </Box>
-    )
+    </Box>
+
+  )
 }
 
 export default Appbar;
