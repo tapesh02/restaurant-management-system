@@ -151,7 +151,7 @@ const Dashboard = () => {
           />
         </div>
       </Stack>
-      <Stack direction="row" gap={3}>
+      <Stack direction="row" gap={3} className="table-wrapper">
         <Stack direction="column" className="feedback-wrapper-main">
           <Typography variant="h6">Feedbacks(3)</Typography>
           <RenderFeedbacks />

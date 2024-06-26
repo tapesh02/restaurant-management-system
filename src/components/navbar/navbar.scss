@@ -40,6 +40,7 @@ $font: clamp(1em, 1.2em, 1.5em);
       .search-input-content {
         font-size: $font;
         color: #ffffff;
+
         & fieldset {
           border: unset;
           outline: unset;
@@ -81,11 +82,13 @@ $font: clamp(1em, 1.2em, 1.5em);
     span {
       margin-top: 0.2em;
     }
+
     &:hover {
       transition: 2ms;
       background-color: #e7f2fd;
     }
   }
+
   & .active {
     background-color: #5782ad;
     color: #ffffff;
@@ -125,7 +128,7 @@ $font: clamp(1em, 1.2em, 1.5em);
     }
 
     & .active {
-      background-color:  #f0efef;
+      background-color: #f0efef;
       color: #1976d2;
     }
   }
@@ -136,4 +139,68 @@ $font: clamp(1em, 1.2em, 1.5em);
   width: 20em;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+
+  // App bar styles
+  header {
+    .navbar-toolbar-wrapper {
+      padding: 0 0.4em;
+      justify-content: space-around;
+
+      button {
+        padding-right: 0;
+        margin-right: 0;
+      }
+
+      .logo {
+        height: 2.5em;
+        margin-top: 0.5em;
+      }
+
+      .search-input-wrapper {
+        width: auto;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid;
+        border-radius: 5px;
+
+        .search-input {
+          height: 100%;
+          width: 100%;
+
+          .search-input-content {
+            font-size: 14px;
+            color: #ffffff;
+            height: 100%;
+            width: 100%;
+            border: unset;
+
+            & input {
+              border: unset;
+              outline: none;
+              height: 100%;
+              font-size: 14px;
+              padding: 0;
+              padding-left: 0.5em;
+              color: whitesmoke;
+            }
+
+            & fieldset {
+              border: unset;
+              outline: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // MU styles
+  .MuiDrawer-paper {
+    width: 12em;
+  }
 }

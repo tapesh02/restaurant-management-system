@@ -40,6 +40,7 @@
       h6 {
         margin-bottom: 0.6em;
       }
+
       h4 {
         font-variant-numeric: tabular-nums;
       }
@@ -73,10 +74,12 @@
       & .MuiChartsAxis-tickLabel {
         opacity: 0.6;
       }
+
       //for dots
       & .MuiMarkElement-root {
         stroke: #105472;
       }
+
       //for curve line
       & .MuiLineElement-series-auto-generated-id-0 {
         stroke: #105472;
@@ -100,6 +103,7 @@
         top: 0%;
         left: 3%;
       }
+
       & .MuiGauge-valueText {
         text {
           font-weight: 600;
@@ -145,6 +149,7 @@
       background-color: #c0c0c022;
       border-radius: 5em;
     }
+
     .feedback-wrapper {
       height: fit-content;
       padding: 0.25em;
@@ -182,11 +187,13 @@
               margin-bottom: 0.2em;
               opacity: 1;
             }
+
             svg {
               stroke: #1796d3;
               fill: #1796d3;
             }
           }
+
           .date-time {
             width: auto;
             color: #346b64;
@@ -202,6 +209,7 @@
       }
     }
   }
+
   .fav-food-wrapper {
     width: 60%;
     padding: 1em;
@@ -236,6 +244,7 @@
 
       tbody {
         width: 100%;
+
         tr {
           td {
             padding: 0.5em;
@@ -269,4 +278,109 @@
       }
     }
   }
+}
+
+
+@media screen and (max-width: 500px) {
+  .main-app {
+    padding: 1.25em 0;
+    box-sizing: border-box;
+  }
+
+  .dashboard-wrapper {
+    font-size: 14px;
+    box-sizing: border-box;
+
+    .dash-cards-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .5em;
+
+      .dash-cards {
+        width: auto;
+        height: auto;
+
+        h6,
+        h4 {
+          margin: 0.25em 0;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .charts-wrapper {
+      flex-direction: column;
+      width: 100%;
+
+      h6,
+      h4 {
+        margin: 0.25em 0;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .line-chart-wrapper {
+        width: 100%;
+      }
+
+      .gauge-chart-wrapper {
+        width: 100%;
+      }
+    }
+
+    .items-wrapper {
+      box-sizing: border-box;
+      flex-direction: column-reverse;
+
+      .feedback-wrapper-main {
+        width: auto;
+
+        h6,
+        h4 {
+          margin: 0.25em 0;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .fav-food-wrapper {
+        width: auto;
+        padding: 0.2em;
+
+        h6,
+        h4 {
+          margin: 0.25em 0;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        tr {
+          font-size: 12px;
+
+          img {
+            display: none;
+          }
+        }
+
+        td {
+          padding: 0.2em;
+        }
+      }
+    }
+  }
+
+
 }
