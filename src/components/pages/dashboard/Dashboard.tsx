@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import {  Typography, Stack } from "@mui/material";
 import { LineChart, Gauge } from "@mui/x-charts";
 import RenderFavFoodTable from "./RenderFavFoodTable";
@@ -6,7 +5,6 @@ import RenderCards from "./RenderCards";
 import RenderFeedbacks from "./RenderFeedbacks";
 
 const Dashboard = () => {
-
   const RenderLineChart = () => {
     return (
       <LineChart
