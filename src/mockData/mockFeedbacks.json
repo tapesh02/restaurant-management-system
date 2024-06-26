@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "fullName": "Glynnis Iceton",
+        "date": "02/27/2024",
+        "profilePic": "https://ui-avatars.com/api/?name=Glynnis+Iceton&background=0D8ABC&color=fff",
+        "reviews" :"Authentic flavors and excellent service make this restaurant a must-visit for Indian cuisine lovers."
+      },
+      {
+        "id": 2,
+        "fullName": "Hanan McArte",
+        "date": "05/07/2024",
+        "profilePic": "https://ui-avatars.com/api/?name=Hanan+McArte&background=cc0000&color=fff",
+        "reviews" :"The perfect blend of spices in every dish, with generous portions and a cozy ambiance."
+      },
+      {
+        "id": 3,
+        "fullName": "Daffi Gudger",
+        "date": "03/27/2024",
+        "profilePic": "https://ui-avatars.com/api/?name=Daffi+Gudger&background=E79B25&color=fff",
+        "reviews" :"Fresh ingredients and traditional recipes transport you straight to India with every bite."
+      },
+      {
+        "id": 4,
+        "fullName": "Tasia Boulsher",
+        "date": "01/10/2024",
+        "profilePic": "https://ui-avatars.com/api/?name=Tasia+Boulsher&background=346B64&color=fff",
+        "reviews" :"Friendly staff and a vibrant atmosphere complement the mouthwatering menu perfectly."
+      },
+      {
+        "id": 5,
+        "fullName": "Caspar Cestard",
+        "date": "10/14/2023",
+        "profilePic": "https://ui-avatars.com/api/?name=Caspar+Cestard&background=7C5317&color=fff",
+        "reviews" :"Each dish bursts with rich flavors and aromas, making it a true treat for the senses."
+      },
+      {
+        "id": 6,
+        "fullName": "Curr Pilmoor",
+        "date": "03/12/2024",
+        "profilePic": "https://ui-avatars.com/api/?name=Curr+Pilmoord&background=E3675A7&color=fff",
+        "reviews" :"Whether it's the butter chicken or the samosas, this place never disappoints."
+      },
+      {
+        "id": 7,
+        "fullName": "Brockie Soppeth",
+        "date": "04/08/2024",
+        "profilePic": "https://ui-avatars.com/api/?name=Brockie+Soppeth&background=cc0000&color=fff",
+        "reviews" :"Our go-to spot for family dinners, offering a wide variety of dishes to please everyone."
+      },
+      {
+        "id": 8,
+        "fullName": "Jemmie Rodge",
+        "date": "06/18/2024",
+        "profilePic": "https://ui-avatars.com/api/?name=Jemmie+Rodge&background=00103D&color=fff",
+        "reviews" :"Tucked away but worth finding, with exceptional food and reasonable prices."
+      },
+      {
+        "id": 9,
+        "fullName": "Vallie Kobiera",
+        "date": "09/13/2023",
+        "profilePic": "https://ui-avatars.com/api/?name=Vallie+Kobiera&background=346B64&color=fff",
+        "reviews" :"Extensive vegetarian options that are as delicious and satisfying as the non-veg dishes."
+      },
+      {
+        "id": 10,
+        "fullName": "Sharline Buckwell",
+        "date": "07/20/2023",
+        "profilePic": "https://ui-avatars.com/api/?name=Sharline+Buckwell&background=6C7D00&color=fff",
+        "reviews" :"The decor and music, along with the food, make for an immersive Indian dining experience."
+      }
+      
+]
