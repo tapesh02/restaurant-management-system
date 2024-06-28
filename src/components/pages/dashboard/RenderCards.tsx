@@ -11,7 +11,7 @@ const RenderCards = () => {
           <Typography variant="h4">
             {Math.floor(Math.random() * 1000)}
           </Typography>
-          <Typography variant="body2">
+          <Typography variant="body2"  style={{color: "#3EC08D"}}>
             + {Math.floor(Math.random() * 100)} % from last month
           </Typography>
         </Card>
