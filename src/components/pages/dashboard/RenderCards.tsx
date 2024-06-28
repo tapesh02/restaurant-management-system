@@ -9,7 +9,7 @@ const RenderCards = () => {
           <IconComponent icon={FiActivity} />
           <Typography variant="h6">{cardTitle}</Typography>
           <Typography variant="h4">
-            {Math.floor(Math.random() * 1000)}k
+            {Math.floor(Math.random() * 1000)}
           </Typography>
           <Typography variant="body2">
             + {Math.floor(Math.random() * 100)} % from last month
