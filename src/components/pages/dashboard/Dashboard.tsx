@@ -67,7 +67,9 @@ const Dashboard = () => {
                 <th>Average</th>
               </tr>
             </thead>
+            <tbody>
             <RenderFavFoodTable />
+            </tbody>
           </table>
         </div>
       </Stack>

@@ -19,7 +19,9 @@ const Tables = () => {
             <th>Customer</th>
           </tr>
         </thead>
+        <tbody >
         <RenderTableStatus />
+        </tbody>
       </table>
     </div>
   );

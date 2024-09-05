@@ -334,6 +334,13 @@
 
       .gauge-chart-wrapper {
         width: 100%;
+        padding-bottom: 1em;
+        & .MuiGauge-valueText {
+          text {
+            font-size: 2.8em;
+          }
+        }
+
       }
     }
 

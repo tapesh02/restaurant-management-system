@@ -2,8 +2,7 @@ import { favFoods } from "../../../helpers/dataHelpers";
 
 const RenderFavFoodTable = () => {
     return favFoods?.map(({ id, dishName, timesOrdered, image }, index) => (
-      <tbody key={id}>
-        <tr>
+        <tr key={id}>
           <td>{index + 1}</td>
           <td>
             <span>
@@ -15,7 +14,6 @@ const RenderFavFoodTable = () => {
           <td>{Math.floor(Math.random() * 100)}</td>
           <td>{Math.floor(Math.random() * 100)}</td>
         </tr>
-      </tbody>
     ));
   };
 
