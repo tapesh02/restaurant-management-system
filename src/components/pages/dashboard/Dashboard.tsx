@@ -1,10 +1,13 @@
-import {  Typography, Stack } from "@mui/material";
+import {  Typography, Stack, useTheme, useMediaQuery } from "@mui/material";
 import { LineChart, Gauge } from "@mui/x-charts";
 import RenderFavFoodTable from "./RenderFavFoodTable";
 import RenderCards from "./RenderCards";
 import RenderFeedbacks from "./RenderFeedbacks";
 
 const Dashboard = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   const RenderLineChart = () => {
     return (
       <LineChart
@@ -43,6 +46,7 @@ const Dashboard = () => {
             valueMax={60}
             innerRadius="75%"
             cornerRadius="50%"
+            height={ isMobile ? 150 : 300}
           />
         </div>
       </Stack>
